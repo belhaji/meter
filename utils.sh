@@ -13,7 +13,7 @@ function create_user_mail_dir {
 	mkdir -p "$MAIL_DIR/$1/Attachments"
 }
 
-function encrypt_msgs_for_user {
+function compress_msgs_for_user {
 	# find a all files that not modified more than 1440min (24h)
 	# in our case the modification time = creation time because 
 	# we don't modify messages after the send operation
